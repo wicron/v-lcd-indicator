@@ -1,0 +1,59 @@
+#==============================================================================
+# Copyright (c) 2011 Evgeny Proydakov <lord.tiran@gmail.com>
+#==============================================================================
+
+Installation
+------------
+
+WARNING!!! Before we start I recommend to the directory user to create there a folder where we start each new stage of assembly where we will upload libs:
+
+3) Next, you must install the libraries on which the draft.
+
+3.1) Installing libmodbus:
+
+Loading from http://github.com/stephane/libmodbus. I suggest to download the latest stable release is 3.0.1.
+From the console is the command:
+
+wget http://github.com/stephane/libmodbus/zipball/v3.0.1
+unzip -x v3.0.1
+cd stephane-libmodbus-********/
+./autogen.sh
+./configure
+make && sudo make install
+
+Building
+--------
+
+(standart build)
+
+mkdir build
+cd build
+cmake ..
+make -j4
+
+Testing
+-------
+
+To build and run the tests necessary to:
+
+mkdir build
+cd build
+cmake ..
+make -j4
+make test
+
+
+you can disable test
+
+cmake -D DISABLE_TEST=TRUE ..
+
+
+Report a Bug
+------------
+
+We have a bug tracker at http://github.com/proydakov/lcd_indicator/issues ... or we can send messages by email - we already know them.
+
+
+-------------------------------------
+Thank you for choosing this software.
+-------------------------------------
