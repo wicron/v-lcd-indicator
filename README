@@ -34,6 +34,7 @@ make -j4
 Testing
 -------
 
+For testing you need Qt4.
 To build and run the tests necessary to:
 
 mkdir build
